@@ -1,0 +1,29 @@
+Commands for Docker installation in Ubuntu:
+sudo apt -get update
+sudo apt install docker.io
+sudo systemctl enable docker
+sudo systemctl status docker
+sudo systemctl start docker
+sudo docker run hello-world
+
+
+docker --version
+docker images
+docker ps
+this is optional=docker rmi -f image id
+docker pull openjdk
+docker images
+docker ps
+docker run --name JAVA -it -d openjdk
+docker ps
+docker exec -it JAVA jshell
+
+
+docker pull python
+docker images
+docker ps
+docker run --name PYTHON -it -d python
+docker ps
+docker exec -it PYTHON python3
+
+
